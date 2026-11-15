@@ -14,7 +14,7 @@ def check_disk_usage():
     for directory in directories:
         total,used,free=shutil.disk_usage(directory)
         print(f"Directory:{directory}")
-        print(f"Total:{Total}")
+        print(f"Total:{total}")
         print(f"Used:{used}")
         print(f"free:{free}")
         print("-"*30)
