@@ -18,4 +18,4 @@ jobs:
       - name: Run the disk usage analyzer
         run: python disk_usage_reporter.py
       - name: Run the file organizer script
-        run: python file_organizer.py
+        run: python file_organizer.py /home/prityushs/Python
