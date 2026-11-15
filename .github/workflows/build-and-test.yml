@@ -1,0 +1,19 @@
+name: Running the python script
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test-Autonmated-Python-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v4
+      - name: Running the python disk analyzer script
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the disk usage analyzer
+        run: python disk_usage_reporter.py 
