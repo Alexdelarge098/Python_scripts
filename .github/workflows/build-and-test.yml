@@ -16,4 +16,6 @@ jobs:
           python-version: "3.12"
 
       - name: Run the disk usage analyzer
-        run: python disk_usage_reporter.py 
+        run: python disk_usage_reporter.py
+      - name: Run the system health checkou
+        run: python system_health_check.py
