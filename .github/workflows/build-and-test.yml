@@ -18,5 +18,7 @@ jobs:
         run: pwd
       - name: list files in the directory
         run: ls -la
+      - name: verify Python version
+        run: python --version
       - name: run recent file modified script
         run:  python recent_file_modified.py .
