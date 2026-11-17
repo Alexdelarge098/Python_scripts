@@ -14,8 +14,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Run the disk usage analyzer
-        run: python disk_usage_reporter.py
-      - name: run directory inventory script
-        run:  python directory_inventory_report.py .
+      - name: print working directory
+        run: pwd
+      - name: list files in the directory
+        run: ls -la
+      - name: run recent file modified script
+        run:  python recent_file_modified.py .
