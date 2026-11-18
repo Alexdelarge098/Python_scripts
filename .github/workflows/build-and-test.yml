@@ -22,3 +22,5 @@ jobs:
         run: python --version
       - name: run recent file modified script
         run:  python recent_file_modified.py .
+      - name: run date until date script
+        run: python days_until_date.py 2026-12-31
