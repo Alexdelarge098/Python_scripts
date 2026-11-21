@@ -24,3 +24,5 @@ jobs:
         run:  python recent_file_modified.py .
       - name: run date until date script
         run: python days_until_date.py 2026-12-31
+      - name: run uptime python script
+        run: python uptime.py
