@@ -30,3 +30,5 @@ jobs:
           pip install psutil
       - name: run uptime python script
         run: python uptime.py
+      - name: run free_disk.py
+        run: python free_disk.py
