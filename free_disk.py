@@ -1,5 +1,7 @@
 import shutil
 
+drive="/home/prityushs/Python"
+
 def check_disk_uage(drive):
     total,used,free=shutil.disk_usage(drive)
 
@@ -9,4 +11,5 @@ def check_disk_uage(drive):
     print(f"Free space:{free // {1024 **3}} GB")
 
 if __name__=="__main__":
-    check_disk_usage("C:/")
+    check_disk_usage(drive)
+
