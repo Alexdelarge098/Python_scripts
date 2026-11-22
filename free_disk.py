@@ -2,7 +2,6 @@ import shutil
 import sys
 
 def check_disk_usage(drive):
-    folder=sys.argv[1]
     total, used, free = shutil.disk_usage(drive)
 
     print(f"Drive: {drive}")
@@ -11,5 +10,11 @@ def check_disk_usage(drive):
     print(f"Free Space: {free // (1024 ** 3)} GB")
 
 if __name__ == "__main__":
-    check_disk_usage(folder)
 
+    if len(sys.argv) != 2:
+        print("Usage: python disk_usage.py <path>")
+        sys.exit(1)
+
+    drive = sys.argv[1]
+
+    check_disk_usage(drive)
