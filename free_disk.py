@@ -2,7 +2,7 @@ import shutil
 
 drive="/home/prityushs/Python"
 
-def check_disk_uage(drive):
+def check_disk_usage(drive):
     total,used,free=shutil.disk_usage(drive)
 
     print(f"Drive:{drive}")
