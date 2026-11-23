@@ -32,3 +32,5 @@ jobs:
         run: python uptime.py
       - name: run free_disk.py
         run: python free_disk.py .
+      - name: Run counting files and directories
+        run: python count_disk_and_files.py
