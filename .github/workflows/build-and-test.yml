@@ -35,4 +35,4 @@ jobs:
       - name: Run counting files and directories
         run: python count_disk_and_files.py .
       - name: run find empty files
-        run: run find_empty_files.py
+        run: python find_empty_files.py .
