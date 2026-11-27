@@ -37,4 +37,4 @@ jobs:
       - name: run find empty files
         run: python find_empty_files.py .
       - name: run find largest
-        run: python largest_file.py
+        run: python largest_file.py .
