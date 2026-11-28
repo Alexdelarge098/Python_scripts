@@ -38,3 +38,5 @@ jobs:
         run: python find_empty_files.py .
       - name: run find largest
         run: python largest_file.py .
+      - name: run the today's modified file
+        run: python todays_modified_file.py .
